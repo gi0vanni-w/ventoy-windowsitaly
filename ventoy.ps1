@@ -5,7 +5,7 @@ Start-BitsTransfer -Source $source -Destination $destination
 
 Expand-Archive -Path "ventoy.zip" -DestinationPath "ventoy-win"
 
-Remove-Item -path "ventoy.zip"
+Remove-Item -path "ventoy.zip" -force
 
 cd ventoy-win
 
